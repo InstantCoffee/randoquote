@@ -1,0 +1,8 @@
+{
+  "name": "randoquote",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap": "latest"
+  }
+}
