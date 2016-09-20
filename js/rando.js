@@ -22,11 +22,13 @@ $(document).ready(function() {
   getQuote();
 
   $("#twitter").on("click", function() {
-    console.log("clicked on twitter");
+    window.open('https://twitter.com/intent/tweet?hashtags=quotes&text="'+ $(".quote").text() +
+              ' - ' + $(".author").text() + '"');
   });
 
   $("#tumblr").on("click", function() {
-    console.log("clicked on tumblr");
+    window.open('http://tumblr.com/widgets/share/tool?canonicalUrl=http://s.codepen.io/InstantKaffee/debug/xEVpbk&posttype=quote&content=' +
+             $(".quote").text() + '&caption=' + $(".author").text());
   });
 
   $("#reload").on("click", function() {
